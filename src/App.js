@@ -7,16 +7,16 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+        CAN CAB BEBIDAS-  ENVIADOS A TODO EL PAIS
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://google.com.ar/maps"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
-        </a>
+        Indicanos tu destino 
+          </a>
       </header>
     </div>
   );
