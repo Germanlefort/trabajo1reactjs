@@ -14,8 +14,8 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #4be4e4;
+  min-height: 50vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,4 +35,12 @@
   to {
     transform: rotate(360deg);
   }
+}
+.productos-container {
+  max-width: 600 px;
+  margin: 40 px;
+  border-bottom: #fb9c61;
+  color: rgb(66, 207, 167);
+  background-color: #bce5f0;
+
 }
