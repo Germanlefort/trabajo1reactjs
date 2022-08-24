@@ -10,7 +10,7 @@
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
-  }
+ }
 }
 
 .App-header {
@@ -37,10 +37,27 @@
   }
 }
 .productos-container {
-  max-width: 600 px;
+  max-width: 70 px;
   margin: 40 px;
   border-bottom: #fb9c61;
-  color: rgb(66, 207, 167);
+  color: rgb(66, 87, 207);
   background-color: #bce5f0;
 
 }
+.Nav-Bar {
+ border-radius: 6cm; 
+ margin: 90 px;
+ color: rgb(121, 170, 81);
+ display: flex;
+ align-items: center;
+ background-color: bisque;
+}
+.titulo-contenido{
+  color: #fb9c61;
+  align-items: center;
+  border-color: bisque;
+  border-bottom:rgb(66, 207, 167);
+  display: flex;
+  margin-left: 40%;
+  
+ }
