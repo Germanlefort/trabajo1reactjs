@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 10vmin;
   pointer-events: none;
 }
 
@@ -50,6 +50,7 @@
  color: rgb(121, 170, 81);
  display: flex;
  align-items: center;
+ align-content: center;
  background-color: bisque;
 }
 .titulo-contenido{
@@ -57,7 +58,10 @@
   align-items: center;
   border-color: bisque;
   border-bottom:rgb(66, 207, 167);
-  display: flex;
+  display: flex ;
   margin-left: 40%;
   
+ }
+ .N-V{
+  margin-left: 50%;
  }
