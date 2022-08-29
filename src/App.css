@@ -53,7 +53,7 @@
  align-content: center;
  background-color: bisque;
 }
-.titulo-contenido{
+.titulo-contenido {
   color: #fb9c61;
   align-items: center;
   border-color: bisque;
@@ -62,6 +62,13 @@
   margin-left: 40%;
   
  }
- .N-V{
+ .N-V {
   margin-left: 50%;
  }
+
+
+ .my-conteiner {
+  max-width: 800px;
+  margin: auto;
+ }
+ 
