@@ -31,41 +31,6 @@ const ItemCount = () => {
 const handleSaludar = () =>{
 
   setSaludar(!Comprar) }
-//   //      if (saludar){
-
-// //        setSaludar (false)
-// // }    else {
-// //   setSaludar(true)
-// // }
-
-// }
-
-// //console.log("contador")
-//  useEffect( () => {
-//    console.log(" contador montado!")
-   
-//    setTimeout ( () => {
-//     setSaludar(false)
-//    }, 300)
-   
-   
-   
-//    return () =>{
-//     console.log("contador desmontado")
-//    }
-//  }, [] )
-
-
-
-
-
-
-
-//  useEffect(() => {
-//  if( counter % 2 ===0) { 
-//   console.log(counter)
-//  } 
-//   }, [counter]  )
 
 
     return (
