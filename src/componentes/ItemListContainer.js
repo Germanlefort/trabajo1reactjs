@@ -1,18 +1,19 @@
 import CartWidget from "./CartWidget";
 import ItemCount from "./ItemCount";
-
+import Stock from "./Stock";
 const ItemListContainer= ({children}) => {
     return (
       <div className="">
          <h2>{children} </h2>
          <p>Cervezas</p>
          <ItemCount max={20} />
-         <p>Vinos</p>
+         <p> {} </p>
          <ItemCount max={50} />
          <p>Coca Cola</p>
          <ItemCount max={4} />
          <p>Agua sin gas </p>
          <ItemCount max={4} />
+         
 
 
 

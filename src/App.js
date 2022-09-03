@@ -5,6 +5,7 @@ import { Button } from 'react-bootstrap';
 import ItemLisContainer from './componentes/ItemListContainer';
 
 import { useState } from 'react';
+import Stock from './componentes/Stock';
 
 
 
@@ -21,7 +22,7 @@ const App = () => {
         <Button variant='danger'>Menor de 18 años</Button> 
         <ItemLisContainer> {"Nuestras Bebidas"}
          </ItemLisContainer>
-        
+            
     
     </div>
 

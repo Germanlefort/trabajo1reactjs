@@ -1,4 +1,5 @@
 import { useState } from "react"
+import Stock from "./Stock"
 
 
 
@@ -14,7 +15,7 @@ const ItemCount = () => {
 
  const handleSumar = () => {
      
-     if(counter < 150) { 
+     if(counter < 100) { 
     setCounter(counter + 1)
      }
  }
