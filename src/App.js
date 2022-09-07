@@ -3,9 +3,8 @@ import  NavBar  from './componentes/navBar.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button } from 'react-bootstrap';
 import ItemLisContainer from './componentes/ItemListContainer';
-
 import { useState } from 'react';
-import Stock from './componentes/Stock';
+
 
 
 
@@ -20,10 +19,7 @@ const App = () => {
         <NavBar/>      
         <Button variant='success'>Mayor de 18 años</Button>
         <Button variant='danger'>Menor de 18 años</Button> 
-        <ItemLisContainer> {"Nuestras Bebidas"}
-         </ItemLisContainer>
-            
-    
+    <ItemLisContainer/>
     </div>
 
       

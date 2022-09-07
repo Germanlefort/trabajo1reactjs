@@ -1,11 +1,10 @@
 import { useState } from "react"
-import Stock from "./Stock"
-
+import { Productos } from "./data/data"
 
 
 const ItemCount = () => {
  
- const [counter, setCounter ] = useState(0)
+ const [Counter, setCounter] = useState(0)
  const [Comprar, setSaludar] =   useState(false)
 
 
@@ -15,15 +14,15 @@ const ItemCount = () => {
 
  const handleSumar = () => {
      
-     if(counter < 100) { 
-    setCounter(counter + 1)
+     if(Counter < 100) { 
+    setCounter(Counter + 1)
      }
  }
  const handleRestar = () => {
      
-     if (counter > 0) {
+     if (Counter > 0) {
 
-    setCounter(counter - 1)
+    setCounter(Counter - 1)
 
     
   }
@@ -37,7 +36,7 @@ const handleSaludar = () =>{
       <div className="container-my 5">
          
             <button onClick={handleRestar} className="btn-btn-outline-primary">-</button>
-            <span className="mx-2">{counter}</span>
+            <span className="mx-2">{Counter}</span>
            
             <button onClick={handleSumar} className="btn-btn-primary">+</button>
 
