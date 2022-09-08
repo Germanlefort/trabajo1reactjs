@@ -32,11 +32,6 @@ console.log(productos)
           })
 },[])
 
-//const arr = ["Hola","Mundo", "Coder"]
-// console.log(productos.map((el) =>{
-//     return el.Bebidas
-// }
-// ))
 return (
 
     <div>

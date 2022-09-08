@@ -1,3 +1,4 @@
+import ItemCount from "../componentes/ItemCount"
 import Item from "../ITEM/Item"
 
 
@@ -8,10 +9,11 @@ import Item from "../ITEM/Item"
 return ( 
     
     <div className="container my-5">
-    <h2>Item List Container </h2> 
+    <h2>BEBIDAS</h2> 
     <hr/>
 
     { productos.map((prod) => <Item productos={prod} key={prod.id}/> )}
+    
      </div>
 )
  }

@@ -1,4 +1,5 @@
 import { Productos } from "../componentes/data/data"
+import ItemCount from "../componentes/ItemCount"
 
  const Item = ( {productos}) => {
     return ( 
@@ -10,6 +11,8 @@ import { Productos } from "../componentes/data/data"
                 <small> stockDisponible : {productos.StockDisponible} </small>
                 <hr/>
                 <a className="btn btn-primary">Ver mas informacion</a>
+                <hr/>
+                <ItemCount/>
     
            
            </div>
