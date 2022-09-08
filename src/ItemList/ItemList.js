@@ -1,3 +1,4 @@
+import Item from "../ITEM/Item"
 
 
 
@@ -10,22 +11,8 @@ return (
     <h2>Item List Container </h2> 
     <hr/>
 
-
-    {productos.map((prod) => {
-        return<div key={prod.id}>
-            <h2>{prod.Bebidas}</h2>
-            <p>precio:{prod.Precio} </p>
-            <p> Descripcion: {prod.Descripcion} </p>
-            <small> stockDisponible : {prod.stockDisponible} </small>
-            <hr/>
-            <a className="btn btn-primary">Ver mas informacion</a>
-
-       
-       </div>
-       })}
-
-</div>
-
-
+    { productos.map((prod) => <Item productos={prod} key={prod.id}/> )}
+     </div>
 )
- } 
+ }
+export default ItemList
