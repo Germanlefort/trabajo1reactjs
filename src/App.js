@@ -4,22 +4,45 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button } from 'react-bootstrap';
 import ItemLisContainer from './componentes/ItemListContainer';
 import { useState } from 'react';
+import PokeApi from './Ejemplos/pokeapi';
+import { BrowserRouter, Routes,Route, Navigate } from 'react-router-dom';
 
 
 
 
 const App = () => {
- const [show, setShow] = useState (true)
- const handleShow = () => {
- setShow (!show)
-}
+  
+  
   return (
     <div className="">
-       
+      <BrowserRouter> 
         <NavBar/>      
-        <Button variant='success'>Mayor de 18 años</Button>
+
+
+
+       <Routes>
+      <Route path='/' element={ <ItemLisContainer/>} />
+      <Route path='/productos/:CategoryId' element= {<ItemLisContainer/>}/> 
+      <Route path='/item/:itemId' element={<ItemLisContainer/>}/>
+
+
+
+
+        <Route path='/' element= { <ItemLisContainer/> }/>
+        {/* <Route path='/nosotros' element= { <Nosotros/> }/>
+        <Route path='/contactos' element= { <Contacto/> }/>
+      */}
+       <Route path='*' element= { <Navigate to="/"/> }/>   
+       
+       </Routes>
+      
+       {/* <Button variant='success'>Mayor de 18 años</Button>
         <Button variant='danger'>Menor de 18 años</Button> 
-    <ItemLisContainer/>
+        <PokeApi/>
+    
+    <ItemLisContainer/> */}
+
+      </BrowserRouter>
     </div>
 
       

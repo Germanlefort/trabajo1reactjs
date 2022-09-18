@@ -1,16 +1,15 @@
 import { Productos } from "../componentes/data/data"
 import ItemCount from "../componentes/ItemCount"
-
+import { Link } from "react-router-dom"
  const Item = ( {productos}) => {
     return ( 
         
         <div>
                 <h2>{productos.Bebidas}</h2>
                 <p>precio:{productos.Precio} </p>
-                <p> Descripcion: {productos.Descripcion} </p>
                 <small> stockDisponible : {productos.StockDisponible} </small>
                 <hr/>
-                <a className="btn btn-primary">Ver mas informacion</a>
+                <Link  to={`/ITEM/item/${productos.id}`} className="btn btn-primary">Ver mas informacion</Link>
                 <hr/>
                 <ItemCount/>
     
@@ -20,5 +19,3 @@ import ItemCount from "../componentes/ItemCount"
     
     
 export default Item    
-    
-    

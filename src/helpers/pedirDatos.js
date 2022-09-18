@@ -13,3 +13,7 @@ import { Productos } from "../componentes/data/data";
     } )
     
 }
+
+
+
+export default pedirDatos

@@ -2,40 +2,53 @@ import { useEffect, useState } from "react";
 import { pedirDatos } from "../helpers/pedirDatos";    
 import { ItemList } from "../ItemList/ItemList";
 import { Productos } from "./data/data";
-// const promesa = new Promise((resolve, rejet) =>{
-        //cuerpo de la promesa
-        //resolve("promesa finalizada")
-        // rejet( " promesa rechazada")
-        
-        
-    //})
+import { useParams } from "react-router-dom";
+
     
 
 
 const ItemLisContainer = () => {
+  
+  const [productos, setProductos] = useState ([])
+  const [loading, setLoading] = useState(true)
 
-const [productos, setProductos] = useState ([])
-console.log(productos)
-///estructura trabajo promesa
- useEffect(()=>{
+    const { CategoryId } = useParams()
+     
     
+    
+    console.log(CategoryId)
+
+
+
+
+
+
+
+ useEffect(()=>{
+    setLoading(true)
     
      pedirDatos()
           .then( (res) =>{
+            if (!CategoryId){ 
             setProductos(res)
-          })
+          }else {
+            setProductos( res.filter((prod) => prod.Category ===CategoryId))  }
+        })
           .catch((error) =>{
                 console.log(error)
           })
           .finally (() => {
-            //console.log("fin del proceso")
+            setLoading(false)
           })
-},[])
+},[CategoryId])
 
 return (
 
     <div>
-    <ItemList productos={productos}/>
+      {
+        loading ? <h2>Cargando..</h2>
+        :  <ItemList productos={productos}/>
+      }
        
     </div>
 
